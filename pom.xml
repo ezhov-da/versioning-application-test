@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.2.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ru.ezhov.versioning-application-test</groupId>
+    <artifactId>project-parent</artifactId>
+
+    <name>project-parent</name>
+
+    <version>0.0.1</version>
+
+    <packaging>pom</packaging>
+
+    <distributionManagement>
+        <repository>
+            <id>maven.docker.internal.repo</id>
+            <!--<uniqueVersion>true</uniqueVersion>-->
+            <name>internal.repo</name>
+            <url>http://localhost:8081/repository/maven-releases/</url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>maven-releases</id>
+            <url>http://localhost:8081/repository/maven-releases/</url>
+            <layout>default</layout>
+            <releases>
+                <updatePolicy>always</updatePolicy>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <modules>
+        <module>algorithm</module>
+<!--        <module>client-web-src</module>-->
+        <module>client</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
