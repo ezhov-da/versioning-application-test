@@ -35,5 +35,3 @@
     ```
     mvn clean deploy
     ```
-
-__//TODO: сделать так, чтоб работал модуль client-web-src__
