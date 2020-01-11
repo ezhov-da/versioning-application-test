@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>web-src</artifactId>
+    <version>0.0.1</version>
 
     <name>web-src</name>
 </project>
