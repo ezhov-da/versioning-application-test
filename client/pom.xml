@@ -9,55 +9,17 @@
         <version>0.0.1</version>
     </parent>
 
-    <artifactId>client</artifactId>
-
+    <groupId>ru.ezhov.versioning-application-test.client</groupId>
+    <artifactId>client-parent</artifactId>
     <version>0.0.1</version>
 
-    <name>client</name>
+    <packaging>pom</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>ru.ezhov.versioning-application-test.algorithm</groupId>
-            <artifactId>api</artifactId>
-            <version>0.0.1</version>
-        </dependency>
+    <name>client-parent</name>
 
-        <dependency>
-            <groupId>ru.ezhov.versioning-application-test.algorithm</groupId>
-            <artifactId>default-implementation</artifactId>
-            <version>0.0.1</version>
-        </dependency>
+    <modules>
+        <module>application</module>
+        <module>web-src</module>
+    </modules>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>ru.ezhov.versioning-application-test</groupId>-->
-<!--            <artifactId>client-web-src</artifactId>-->
-<!--            <version>0.0.1</version>-->
-<!--        </dependency>-->
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>

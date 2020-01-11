@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>ru.ezhov.versioning-application-test</groupId>
-        <artifactId>project-parent</artifactId>
+        <groupId>ru.ezhov.versioning-application-test.client</groupId>
+        <artifactId>client-parent</artifactId>
         <version>0.0.1</version>
     </parent>
 
-    <artifactId>client-web-src</artifactId>
+    <artifactId>web-src</artifactId>
 
     <version>0.0.1</version>
 
-    <name>client-web-src</name>
+    <name>web-src</name>
 </project>

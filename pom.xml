@@ -42,7 +42,6 @@
 
     <modules>
         <module>algorithm</module>
-<!--        <module>client-web-src</module>-->
         <module>client</module>
     </modules>
 
@@ -50,5 +49,4 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
 </project>
